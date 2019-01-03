@@ -11,6 +11,7 @@ pipeline {
      echo 'Running Build Automation'
       sh 'sudo chmod +x comp.sh'
       sh './comp.sh build --no-daemon'                             
+      sh 'cp *.CSV /home/centos/suneeldeploybranch/'
           }
                         }
   }
